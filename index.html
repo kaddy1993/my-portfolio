@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    <style>
+		
+        html {
+          scroll-behavior: smooth;
+        }
+        
+        #about {
+          height: 600px;
+        }
+        
+        #service {
+          height: 770px;
+        }
+
+        #contactus {
+          height: 900px;
+        }
+		#caleb {
+			height: 1050px;
+		}
+		@media(max-: 425px){/*still have a challende with media queries*/
+			body{
+	font-size: 1rem;
+	font-weight: 200px;
+	}
+	nav{
+	display: flex;
+	font-size: small;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 1rem;
+	line-height: 1.5;
+	margin-bottom: 1rem;
+	background-color: black;
+    position: sticky;
+	top:0;
+	padding-top: 0px;
+}
+
+.logo{
+	color: goldenrod;
+	font-size: small;
+	letter-spacing: 1px;
+    margin-top: 15px;
+	align-content: flex-start;
+}
+		}
+        </style>
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en" />
+</head>
+
+<body>
+    
+		<nav>
+			<h2 class="logo">K-C ICT REVOLUTION</h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#service">Services</a></li>
+				<li><a href="#caleb">Project</a></li>
+				<li><a href="#contactus">Contact Me</a></li>
+			</ul>
+			
+		</nav>
+        <div class="hero">
+		<div class="content">
+			<h4>Hello, my name is</h4>
+			<h1>Kaddy Caleb</h1>
+			<h3>I am a Software Developer, With Over 2 Years of Experience.</h3>
+		</div>
+	</div>
+	<section class="about" id="about">
+		<div class="main">
+			<img src="./images/caleb.jpg">
+			<div class="about-text">
+				<h2>About Me</h2>
+				<p>I am a software developer. I build website from sratch with the common and popular programming language. I also make the website more interactive with web animations.I can provide clean code and pixel perfect design. I also use frameworks and content management.A responsive design makes your website accessible to all users, regardless of their device.</p>
+				<button type="button">Contact-me</button>
+			</div>
+		</div>
+	</section>
+
+	<section id="service">
+	<div class="service" >
+		<div class="title">
+			<h2>Services</h2>
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-code"></i>
+				<h5>Web Development</h5>
+				<div class="pra">
+					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="fas fa-database"></i>
+				<h5>Web Hosting</h5>
+				<div class="pra">
+					<p>I do web hosting with the most reliable server which is a better option for your business. Entrust your data with a tecnical and genuine person, you will always be safe.</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="fas fa-desktop"></i>
+				<h5>Computer S/H Repair</h5>
+				<div class="pra">
+					<p>I repair computers with a maximun attention so that both the software and hardware are up to date. I also install computer software applications.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="caleb">
+<div class="project" >
+	<div class="title">
+		<h2>Project</h2>
+		<p>View one of the projects done so far</p>
+		<img src="./images/form .PNG" alt="">
+		<a class="button-two" href="https://boring-ardinghelli-b895dc.netlify.app/" target="_blank">Click here</a>
+	</div>
+	</div>
+</section>
+	<div class="contact-me">
+		<p>I do design web sites which meet the customer's requirements.</p>
+        
+		<a class="button-two" href="#">Hire Me</a>
+	</div>
+<section id="contactus">
+    <div class="container">
+        <p style=" color: white; font-size: 30px; font-weight:800; margin-left:50%">Contact Me</p>
+        <form id="form" action="">
+      
+          <label for="fname">First Name</label>
+          <br>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <br>
+          <label for="lname">Last Name</label>
+          <br>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <br>
+          <label for="country">Country</label>
+          <br>
+          <select id="country" name="country">
+            <option value="australia">Uganda</option>
+            <option value="canada">Kenya</option>
+            <option value="usa">Tanzania</option>
+            <option value="usa">Rwanda</option>
+            <option value="usa">Burundi</option>
+            <option value="usa">The Democratic Republic of Congo</option>
+            <option value="usa">South Sudan</option>
+          </select>
+      <br>
+          <label for="subject">Subject</label><br>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <br>
+      <br>
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+    </section>
+
+	<footer>
+		<p>Kaddy Caleb</p>
+		<p> please click on the link below to be in touch with me:</p>
+		<div class="social">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/caleb-kitenge-kadimuke-1ba83b108/" target="_blank"><i class="fab fa-linkedin"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/kaddy1993" target="_blank"><i class="fab fa-github"></i></a>
+		</div>
+		<p class="end">copyright 2022 By Kaddy Caleb</p>
+	</footer>
+</body>
+</html>
